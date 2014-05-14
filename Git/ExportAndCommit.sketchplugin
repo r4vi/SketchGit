@@ -9,7 +9,7 @@ var commitMsg = [doc askForUserInput:'Commit message' initialValue:''];
 if (commitMsg != null){
 
   var terminal = SBApplication.application_("Terminal");
-  com.bomberstudios.export_all_artboards()
-  terminal.doScript_in_("cd " + currentFolder + "; cd ../; sleep 2; git commit -m '" + commitMsg + "' -a"+ "; exit",nil);
+  com.bomberstudios.export_all_artboards("png")
+  terminal.doScript_in_("cd " + currentFolder + "; cd ../; sleep 2; git add .; git commit -m '" + commitMsg + "' -a"+ "; exit",nil);
 
 }
