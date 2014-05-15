@@ -3,9 +3,11 @@
 #import 'library/common.js'
 
 var currentFolder = com.bomberstudios.getFileFolder()
-var exportFolder = currentFolder + "/export/"
+var displayName = [doc displayName]
+var exportFolder = currentFolder + "../"+ displayName +".export/"
 
 var commitMsg = [doc askForUserInput:'Commit message' initialValue:''];
+
 
 if (commitMsg != null){
 
